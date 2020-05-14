@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="getAllEmployee" type="button" class="btn btn-primary" >Get All Employee List</a>
+<a href="getAllCustomer" type="button" class="btn btn-primary" >Get All Customer List</a>
 
 <br/>
 </div>
