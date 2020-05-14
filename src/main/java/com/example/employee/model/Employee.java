@@ -2,16 +2,20 @@ package com.example.employee.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+
 
 @Entity
 public class Employee {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int empId;
 	private String empName;
 	private String deptName;
+	private String father;
 	
 	public Employee() {
 		
