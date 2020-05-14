@@ -15,7 +15,6 @@ public class Employee {
 	private int empId;
 	private String empName;
 	private String deptName;
-	private String father;
 	
 	public Employee() {
 		
