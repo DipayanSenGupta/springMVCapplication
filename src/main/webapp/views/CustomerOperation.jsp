@@ -14,30 +14,30 @@
 <th scope="col">Customer Account Number</th></tr></thead>
 <tbody>
 <tr>
-	   <td> <c:out value="${customer.customId}"/></td>
-        <td> <c:out value="${customer.customName}"/></td>  
-        <td> <c:out value="${customer.customNID}"/> </td>
-        <td> <c:out value="${customer.customDOB}"/> </td>
-        <td> <c:out value="${customer.customFatherName}"/> </td>
-        <td> <c:out value="${customer.customMotherName}"/> </td>
-        <td> <c:out value="${customer.customAddr}"/> </td>
-        <td> <c:out value="${customer.accountNum}"/> </td>
+	   <td> <c:out value="${customerData.customId}"/></td>
+        <td> <c:out value="${customerData.customName}"/></td>  
+        <td> <c:out value="${customerData.customNID}"/> </td>
+        <td> <c:out value="${customerData.customDOB}"/> </td>
+        <td> <c:out value="${customerData.customFatherName}"/> </td>
+        <td> <c:out value="${customerData.customMotherName}"/> </td>
+        <td> <c:out value="${customerData.customAddr}"/> </td>
+        <td> <c:out value="${customerData.accountNum}"/> </td>
 </tr>
 </tbody>
 
 </table>
 <br/>
 
-<form method="post" action="updateEmployee">
+<form method="post" action="updateCustomer">
 <input type="hidden" name="empId" value="${customerData.customId}" />
-<input type="submit" value="Update Employee" class="btn btn-primary"/>
+<input type="submit" value="Update Customer" class="btn btn-primary"/>
 </form>
 
 <br/>
 
-<form action="deleteEmployee">
+<form action="deleteCustomer">
 <input type="hidden" name="empId" value="${customerData.customId}" />
-<input type="submit" value="Delete Employee" class="btn btn-primary"/>
+<input type="submit" value="Delete Customer" class="btn btn-primary"/>
 </form>
 
 </div>
