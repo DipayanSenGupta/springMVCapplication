@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="views/styles/bootstrap.min.css">
-<title>Employee Management System</title>
+<title>Simple Debit Credit System</title>
 </head>
 <body>
 
