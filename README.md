@@ -1,6 +1,11 @@
-## Simple Debit Credit System for Bank
+# Simple Debit Credit System for Bank
 
-# Admin User will be able to :
+## Admin User will be able to :
+- Create Employee
+- Create new Role
+- Assign Role to user
+
+## Employee creation
 
 - localhost:9091/employees (GET)
 
@@ -29,7 +34,7 @@
  ]
   -200 OK
  
- # Role Assignment to Employee
+ ## Role Assignment to Employee
  
  - localhost:9091/employees/1/roles   (GET)
 
