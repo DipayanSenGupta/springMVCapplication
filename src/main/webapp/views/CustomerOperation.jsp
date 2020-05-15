@@ -29,14 +29,14 @@
 <br/>
 
 <form method="post" action="updateCustomer">
-<input type="hidden" name="empId" value="${customerData.customId}" />
+<input type="hidden" name="customId" value="${customerData.customId}" />
 <input type="submit" value="Update Customer" class="btn btn-primary"/>
 </form>
 
 <br/>
 
 <form action="deleteCustomer">
-<input type="hidden" name="empId" value="${customerData.customId}" />
+<input type="hidden" name="customId" value="${customerData.customId}" />
 <input type="submit" value="Delete Customer" class="btn btn-primary"/>
 </form>
 
