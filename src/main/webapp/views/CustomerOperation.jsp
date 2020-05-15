@@ -4,14 +4,16 @@
 <table class="table table-hover">
 <thead>
 <tr class="table-primary">
-<th scope="col">Customer ID</th>
-<th scope="col">Customer Name</th>
-<th scope="col">Customer NID</th>
-<th scope="col">Customer Date of Birth</th>
-<th scope="col">Customer Fathers Name</th>
-<th scope="col">Customer Address</th>
-<th scope="col">Customer Phone Number</th>
-<th scope="col">Customer Account Number</th></tr></thead>
+<th scope="col">ID</th>
+<th scope="col">Name</th>
+<th scope="col">NID</th>
+<th scope="col">Date of Birth</th>
+<th scope="col">Fathers Name</th>
+<th scope="col">Address</th>
+<th scope="col">Phone Number</th>
+<th scope="col">Account Number</th>
+<th scope="col">Account Balance</th>
+</tr></thead>
 <tbody>
 <tr>
 	   <td> <c:out value="${customerData.customId}"/></td>
@@ -22,6 +24,8 @@
         <td> <c:out value="${customerData.customMotherName}"/> </td>
         <td> <c:out value="${customerData.customAddr}"/> </td>
         <td> <c:out value="${customerData.accountNum}"/> </td>
+        <td> <c:out value="${customerData.accountBalance}"/> </td>
+        
 </tr>
 </tbody>
 

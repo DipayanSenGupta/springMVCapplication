@@ -22,7 +22,8 @@ public class Customer {
 	private String customAddr;
 	private String customPhoneNum;
 	private String accountNum;
-	
+	private String accountBalance;
+
 
 	public Customer() {
 		
@@ -142,6 +143,14 @@ public class Customer {
 
 	public void setCustomPhoneNum(String customPhoneNum) {
 		this.customPhoneNum = customPhoneNum;
+	}
+	
+	public String getAccountBalance() {
+		return accountBalance;
+	}
+
+	public void setAccountBalance(String accountBalance) {
+		this.accountBalance = accountBalance;
 	}
 
 }

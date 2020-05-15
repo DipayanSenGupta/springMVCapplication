@@ -52,6 +52,13 @@
    	<form:input path="accountNum" class="form-control"/>
 	<form:errors path="accountNum" class="form-control"/><br/>
 </div>
+
+<div class="form-group">
+  <label class="col-form-label" for="accountBalance">Account Balance:</label>
+   	<form:input path="accountBalance" class="form-control"/>
+	<form:errors path="accountBalance" class="form-control"/><br/>
+</div>
+
 </fieldset>
 
 

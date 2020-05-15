@@ -8,15 +8,11 @@
 
 <form:input type="hidden" path="customId" value="${customerDetails.customId}"/>
 
-<%-- Employee Name: <form:input path="empName" value="${customerDetails.empName}"/>
-				<form:errors path="empName"/><br/>
-Employee Department : <form:input path="deptName" value="${customerDetails.deptName}"/>
-					<form:errors path="deptName"/><br/> --%>
 										
 <div class="form-group">
   <label class="col-form-label" for="customName">Customer Name :</label>
    	<form:input path="customName" value="${customerDetails.customName}" class="form-control"/>
-	<form:errors path="customName" class="form-control"/><br/>
+	<form:errors path="customName" class="form-control"/>
 </div>
 
 <div class="form-group">
@@ -57,17 +53,19 @@ Employee Department : <form:input path="deptName" value="${customerDetails.deptN
 	<form:errors path="customPhoneNum" class="form-control"/>
 </div>
 
-<div class="form-group">
-  <label class="col-form-label" for="customPhoneNum">Phone Number :</label>
- 	<form:input path="customPhoneNum" value="${customerDetails.customPhoneNum}" class="form-control"/>
-	<form:errors path="customPhoneNum" class="form-control"/>
-</div>
 
 <div class="form-group">
   <label class="col-form-label" for="accountNum">Account Number :</label>
  	<form:input path="accountNum" value="${customerDetails.accountNum}" class="form-control"/>
 	<form:errors path="accountNum" class="form-control"/>
 </div>
+
+<div class="form-group">
+  <label class="col-form-label" for="accountBalance">Account Balance :</label>
+ 	<form:input path="accountBalance" value="${customerDetails.accountBalance}" class="form-control"/>
+	<form:errors path="accountBalance" class="form-control"/>
+</div>
+
 
 </fieldset>
 <input type="submit" value="update Customer" class="btn btn-primary"/>
