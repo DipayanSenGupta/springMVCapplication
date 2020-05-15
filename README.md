@@ -11,6 +11,7 @@
 ## Attributes :
 Customer Name, Date of Birth, NID, Father`s Name , Mother`s Name, Address, Phone No , Account no , Account Balance.
 
+## Endpoints :
 - "/", Home Page
 - "/addNewCustomer", this will direct to customer creation form. 
 - "/addCustomerDetails", if data is added successfully then directed to home page or redirected to "NewCustomer" jsp form page, else redirected to home page with new data.
