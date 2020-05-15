@@ -62,6 +62,9 @@ public class CustomerController {
 	@RequestMapping(value="/customer", method=RequestMethod.GET)
 	public String Customer(Model model, @RequestParam("accountNum") String accountNum) {
 		Customer custom  = serviceRef.CustomByAccountNum(accountNum);
+		if(custom == null){
+		    return "redirect:/getAllCustomer";
+		}
 		System.out.println("Before view "+custom);
 		model.addAttribute("customerData",custom);
 		return "CustomerOperation";
