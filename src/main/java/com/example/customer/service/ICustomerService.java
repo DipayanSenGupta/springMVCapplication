@@ -9,9 +9,9 @@ public interface ICustomerService {
 
 	List<Customer> getAllCustomer();
 	Customer getCustomerById(int empId);
-	void addCustomer(Customer employee);
-	void updateCustomer(Customer employee, int empId);
+	void addCustomer(Customer customer);
+	void updateCustomer(Customer customer, int empId);
 	void deleteCustomer(int empId);
-	List<Customer> getCustomByAccountNum(String deptName);
+	Customer CustomByAccountNum(String accountNum);
 
 }
