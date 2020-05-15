@@ -14,4 +14,6 @@
 
 <br/>
 </div>
-<%@ include file="footer.jsp" %>
+<br/>
+<hr/>
+<br/>

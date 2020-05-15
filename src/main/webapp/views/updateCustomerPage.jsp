@@ -73,4 +73,7 @@
 </form:form>
 
 </div>
-<%@ include file="footer.jsp" %>
+
+<br/>
+<hr/>
+<br/>
