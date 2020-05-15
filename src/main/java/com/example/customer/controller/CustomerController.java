@@ -22,7 +22,7 @@ public class CustomerController {
 	
 	@RequestMapping("/")
 	public String getHomePage(Model model) {
-		model.addAttribute("successMsg", "Simple Debit Credit System for bank");
+		model.addAttribute("successMsg", "Simple Debit Credit System");
 		
 		return "Homepage";
 	}
@@ -53,37 +53,37 @@ public class CustomerController {
 	
 	@RequestMapping("/getAllCustomer")
 	public String getCustomerList(Model model) {
-		List<Customer> customerList = new ArrayList<Customer>();
-		customerList= serviceRef.getAllCustomer();
-		model.addAttribute("CustomerList",customerList);
-		return "Customerview";
+		List<Customer> customList = new ArrayList<Customer>();
+		customList= serviceRef.getAllCustomer();
+		model.addAttribute("customerList",customList);
+		return "customerview";
 	}
 	
-	@RequestMapping(value="/Customer", method=RequestMethod.GET)
+	@RequestMapping(value="/customer", method=RequestMethod.GET)
 	public String Customer(Model model, @RequestParam("customId") int customId) {
-		Customer custom  = serviceRef.getCustomerById(customId);
-		System.out.println("Before view "+custom);
-		model.addAttribute("CustomerData",custom);
+		Customer emp  = serviceRef.getCustomerById(customId);
+		System.out.println("Before view "+emp);
+		model.addAttribute("customerData",emp);
 		return "CustomerOperation";
 	}
 	
 	@RequestMapping("/updateCustomer")
 	public String updateCustomer(Model model, @RequestParam("customId") int customId) {
-		Customer custom = serviceRef.getCustomerById(customId);
-		System.out.println("in update Emp"+custom);
-		model.addAttribute("CustomerDetails", custom);
+		Customer emp = serviceRef.getCustomerById(customId);
+		System.out.println("in update Emp"+emp);
+		model.addAttribute("customerDetails", emp);
 		return "updateCustomerPage";
 	}
 	
 	@RequestMapping("/updateCustomerDetails")
-	public String updateCustomerDetail(@ModelAttribute("Customer") Customer Customer, BindingResult result, Model model){
+	public String updateCustomerDetail(@ModelAttribute("customer") Customer customer, BindingResult result, Model model){
 		
 		if(result.hasErrors()){
 			return "NewCustomer";
 		}
 		else{
-			System.out.println(Customer);
-			serviceRef.updateCustomer(Customer, Customer.getCustomId());
+			System.out.println(customer);
+			serviceRef.updateCustomer(customer, customer.getCustomId());
 			model.addAttribute("successMsg", "Customer Updated Successfully");
 			
 			return "Homepage";
@@ -104,3 +104,4 @@ public class CustomerController {
 	}
 	
 }
+
