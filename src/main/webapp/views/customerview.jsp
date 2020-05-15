@@ -1,17 +1,32 @@
+
 <%@ include file="header.jsp" %>
 
 <div class="container">
 <table class="table table-hover">
 <thead>
-<tr class="table-primary"><th scope="col">Employee ID</th><th scope="col">Name</th><th scope="col">Department</th></tr>
+<tr class="table-primary">
+<th scope="col">Customer ID</th>
+<th scope="col">Customer Name</th>
+<th scope="col">Customer NID</th>
+<th scope="col">Customer Date of Birth</th>
+<th scope="col">Customer Fathers Name</th>
+<th scope="col">Customer Address</th>
+<th scope="col">Customer Phone Number</th>
+<th scope="col">Customer Account Number</th></tr>
+
 </thead>
 
-<c:forEach items="${customerListList}" var="employee">
+<c:forEach items="${customerList}" var="customer">
 <tbody>
     <tr>
-        <td> <c:out value="${employee.empId}"/></td>
-        <td> <c:out value="${employee.empName}"/></td>  
-        <td> <c:out value="${employee.deptName}"/> </td>
+        <td> <c:out value="${customer.customId}"/></td>
+        <td> <c:out value="${customer.customName}"/></td>  
+        <td> <c:out value="${customer.customNID}"/> </td>
+        <td> <c:out value="${customer.customDOB}"/> </td>
+        <td> <c:out value="${customer.customFatherName}"/> </td>
+        <td> <c:out value="${customer.customMotherName}"/> </td>
+        <td> <c:out value="${customer.customAddr}"/> </td>
+        <td> <c:out value="${customer.customAccountNum}"/> </td>
     </tr>
 </tbody>
 
@@ -20,21 +35,21 @@
 
 <br/>
 
-<a href="addNewEmployee" type="button" class="btn btn-primary" >Add New Employee</a>
+<a href="addNewCustomer" type="button" class="btn btn-primary" >Add New Customer</a>
 
 <br/>
 
 
-<form action="employee">
+<form action="customer">
 
 
 <div class="form-group">
-<label for="empId">Enter Employee Id :</label> 
+<label for="empId">Enter Customer Id :</label> 
 <input class="form-control" id="empId" type="text" name="empId"/>
 </div>
 
 
-<input type="submit" value="Find Employee By Id" class="btn btn-primary"/>
+<input type="submit" value="Find Customer By Id" class="btn btn-primary"/>
 </form>
 
 </div>
