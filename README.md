@@ -1,4 +1,12 @@
 # Simple Debit Credit System for Bank
+
+End Users will be able to :
+a.	Open savings account for a customer with the necessary fields like Customer Name, Date of Birth, NID, Father`s Name , Mother`s Name, Address, Phone No , Account no etc.
+b.	Deposit/Withdraw the money and update the account balance along with accounting log.
+c.	Generate the report of  Customer list.
+d.	Search the customer by account number and view all the necessary information including the account balance of a customer .
+
+
 Attributes :
 Customer Name, Date of Birth, NID, Father`s Name , Mother`s Name, Address, Phone No , Account no , Account Balance.
 
