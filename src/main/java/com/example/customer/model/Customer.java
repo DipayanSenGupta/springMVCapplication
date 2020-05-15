@@ -21,7 +21,7 @@ public class Customer {
 	private String customMotherName;
 	private String customAddr;
 	private String customPhoneNum;
-	private String customAccountNum;
+	private String accountNum;
 	
 
 	public Customer() {
@@ -29,7 +29,7 @@ public class Customer {
 	}
 	
 	public Customer(int customId, String customName, String customNID,String customDOB,String customFatherName,String customMotherName,
-			String customAddr,String customPhoneNum,String customAccountNum) {
+			String customAddr,String customPhoneNum,String accountNum) {
 		super();
 		this.customId = customId;
 		this.customName = customName;
@@ -39,7 +39,7 @@ public class Customer {
 		this.customMotherName = customMotherName;
 		this.customAddr = customAddr;
 		this.customPhoneNum = customPhoneNum;
-		this.customAccountNum = customAccountNum;
+		this.accountNum = accountNum;
 	}
 
 	public int getCustomId() {
@@ -126,6 +126,14 @@ public class Customer {
 
 
 
+	public String getAccountNum() {
+		return accountNum;
+	}
+
+	public void setAccountNum(String accountNum) {
+		this.accountNum = accountNum;
+	}
+
 	public String getCustomPhoneNum() {
 		return customPhoneNum;
 	}
@@ -134,18 +142,6 @@ public class Customer {
 
 	public void setCustomPhoneNum(String customPhoneNum) {
 		this.customPhoneNum = customPhoneNum;
-	}
-
-
-
-	public String getCustomAccountNum() {
-		return customAccountNum;
-	}
-
-
-
-	public void setCustomAccountNum(String customAccountNum) {
-		this.customAccountNum = customAccountNum;
 	}
 
 }
