@@ -26,7 +26,7 @@
         <td> <c:out value="${customer.customFatherName}"/> </td>
         <td> <c:out value="${customer.customMotherName}"/> </td>
         <td> <c:out value="${customer.customAddr}"/> </td>
-        <td> <c:out value="${customer.customAccountNum}"/> </td>
+        <td> <c:out value="${customer.accountNum}"/> </td>
     </tr>
 </tbody>
 
@@ -44,12 +44,12 @@
 
 
 <div class="form-group">
-<label for="empId">Enter Customer Id :</label> 
-<input class="form-control" id="empId" type="text" name="empId"/>
+<label for="accountNum">Enter Customer Account Number :</label> 
+<input class="form-control" id="accountNum" type="text" name="accountNum"/>
 </div>
 
 
-<input type="submit" value="Find Customer By Id" class="btn btn-primary"/>
+<input type="submit" value="Find Customer By Account Number" class="btn btn-primary"/>
 </form>
 
 </div>

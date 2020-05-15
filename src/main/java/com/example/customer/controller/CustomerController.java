@@ -60,18 +60,18 @@ public class CustomerController {
 	}
 	
 	@RequestMapping(value="/customer", method=RequestMethod.GET)
-	public String Customer(Model model, @RequestParam("customId") int customId) {
-		Customer emp  = serviceRef.getCustomerById(customId);
-		System.out.println("Before view "+emp);
-		model.addAttribute("customerData",emp);
+	public String Customer(Model model, @RequestParam("accountNum") String accountNum) {
+		Customer custom  = serviceRef.CustomByAccountNum(accountNum);
+		System.out.println("Before view "+custom);
+		model.addAttribute("customerData",custom);
 		return "CustomerOperation";
 	}
 	
 	@RequestMapping("/updateCustomer")
 	public String updateCustomer(Model model, @RequestParam("customId") int customId) {
-		Customer emp = serviceRef.getCustomerById(customId);
-		System.out.println("in update Emp"+emp);
-		model.addAttribute("customerDetails", emp);
+		Customer custom = serviceRef.getCustomerById(customId);
+		System.out.println("in update Custom"+custom);
+		model.addAttribute("customerDetails", custom);
 		return "updateCustomerPage";
 	}
 	
@@ -96,7 +96,7 @@ public class CustomerController {
 	
 	@RequestMapping("/deleteCustomer")
 	public String deleteCustomer(Model model, @RequestParam("customId") int customId) {
-		System.out.println("in delete Emp"+customId);
+		System.out.println("in delete Customer"+customId);
 		serviceRef.deleteCustomer(customId);
 		model.addAttribute("successMsg", "Customer Deleted Successfully");
 		
